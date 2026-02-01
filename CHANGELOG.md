@@ -1,0 +1,28 @@
+# Changelog
+
+All notable changes to this project are documented in this file.
+
+## [1.1.0] - 2026-01-31
+
+### Added
+
+- `STRUCTURE.md` — Full reference map of all 66 books with chapter counts
+- `CONTRIBUTING.md` — Guide for using, forking, and contributing to the template
+- `CODE_OF_CONDUCT.md` — Faith-friendly community guidelines
+- `CHANGELOG.md` — This file
+
+### Updated
+
+- `README-TEMPLATE.md` — Fleshed out with Key Verses, Summary, Notes, Cross References, and Questions sections
+- All 66 book-level `README.md` files — Added Overview, Author, Date Written, Chapters, and Key Themes
+- Top-level `README.md` — Improved title, added stats and links to supporting documents
+
+## [1.0.0] - 2026-01-25
+
+### Added
+
+- Initial scaffold of all 66 books of the Protestant Bible
+- 1,189 chapter folders, each with a placeholder `README.md`
+- `topics-of-study/` directory for cross-cutting themes
+- `.gitignore` for common OS, editor, and build artifacts
+- MIT License
