@@ -6,17 +6,20 @@ This repo contains a scaffolded study template for all 66 books of the Protestan
 
 ```
 bible-structure/
-├── books-of-bible/          # All 66 books, numbered 01–66
+├── books-of-bible/          # All 66 books, numbered 01–66 (SHARED)
 │   ├── 01-Genesis/
 │   │   ├── Genesis-01/
-│   │   │   └── README.md    # Chapter-level study notes
+│   │   │   └── README.md    # Chapter-level shared reference notes
 │   │   ├── Genesis-02/
 │   │   │   └── README.md
 │   │   └── ...
 │   ├── 02-Exodus/
 │   └── ...
-├── topics-of-study/         # Cross-cutting themes and topical studies
+├── topics-of-study/         # Cross-cutting themes and topical studies (SHARED)
 │   └── README.md
+├── .personal/               # YOUR private notes — gitignored, never pushed
+│   ├── books-of-bible/      #   (recommended: mirror the repo structure)
+│   └── topics-of-study/
 ├── README.md                # Project overview
 ├── README-TEMPLATE.md       # Template for chapter-level READMEs
 ├── STRUCTURE.md             # This file
@@ -26,6 +29,11 @@ bible-structure/
 ├── LICENSE                  # MIT License
 └── .gitignore
 ```
+
+> **Shared vs. Personal:** Everything outside `.personal/` is shared reference material
+> pushed to git. The `.personal/` folder is gitignored and stays on your local machine.
+> See [README.md](README.md#shared-vs-personal--how-this-repo-works) and
+> [CONTRIBUTING.md](CONTRIBUTING.md#the-two-layer-model) for details.
 
 ## Old Testament (39 Books)
 

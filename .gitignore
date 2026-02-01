@@ -1,3 +1,7 @@
+
+# Personal study notes (private to each user — never shared)
+#.personal/
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -98,6 +102,7 @@ htmlcov/
 
 # Docker
 .docker/
+
 
 # Misc
 .cache/

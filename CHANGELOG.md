@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented in this file.
 
+## [1.2.0] - 2026-01-31
+
+### Added
+
+- Shared vs. Personal two-layer model: `.personal/` folder (gitignored) for private study notes
+- `.personal/` added to `.gitignore`
+- Prominent documentation of the two-layer model in README.md, CONTRIBUTING.md, and STRUCTURE.md
+
 ## [1.1.0] - 2026-01-31
 
 ### Added
