@@ -4,6 +4,7 @@
 # privacy is by convention. See .personal/README.md and CLAUDE.md.
 
 .ai-chats/.lookie/
+darren.md
 
 # OS generated files
 .DS_Store
@@ -116,3 +117,7 @@ htmlcov/
 .serverless/
 *.pid
 *.seed
+
+# MemPalace per-project files (issue #185)
+mempalace.yaml
+entities.json

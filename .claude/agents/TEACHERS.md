@@ -53,7 +53,7 @@ You can also chain them: have one agent do the verse-by-verse pass, then a secon
 
 ## Companion skill
 
-These agents pair with the `deep-bible-study-devotional` skill, which orchestrates the full devotional output structure. The agents are the voices; the skill is the format.
+These agents pair with the `_deep-bible-study-devotional` skill, which orchestrates the full devotional output structure. The agents are the voices; the skill is the format.
 
 ## File format
 

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Bible Study Devotional — Skill Overview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5EFE4;
+    --bg-card: #FBF7EE;
+    --bg-deep: #2A2520;
+    --ink: #1F1B17;
+    --ink-soft: #5A5249;
+    --ink-mute: #8A8276;
+    --line: #D9CFBC;
+    --accent: #6B2A1E;
+    --accent-soft: #A85E4A;
+    --gold: #9C7B2E;
+    --teal: #2A5A52;
+    --blue: #1B3A5C;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(155, 123, 46, 0.04) 0%, transparent 40%),
+      radial-gradient(circle at 80% 60%, rgba(107, 42, 30, 0.03) 0%, transparent 50%);
+    min-height: 100vh;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+
+  /* HERO */
+  header.hero {
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--line);
+    text-align: center;
+    position: relative;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+  .eyebrow::before, .eyebrow::after {
+    content: "✦";
+    display: inline-block;
+    margin: 0 12px;
+    color: var(--gold);
+    opacity: 0.6;
+  }
+  h1.title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 20px;
+    font-variation-settings: "opsz" 144;
+  }
+  h1.title em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent);
+  }
+  .subtitle {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-soft);
+    max-width: 620px;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+  .hero-meta {
+    margin-top: 40px;
+    display: inline-flex;
+    gap: 32px;
+    padding: 16px 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+  .hero-meta .meta-item {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .hero-meta .meta-item strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 2px;
+  }
+
+  /* SECTION */
+  section {
+    padding: 80px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section:last-of-type { border-bottom: none; }
+  .section-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h2.section-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(32px, 4vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+  h2.section-title em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent);
+  }
+  .section-lede {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 680px;
+    margin-bottom: 48px;
+  }
+
+  /* WORKFLOW DIAGRAM */
+  .workflow-card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    padding: 40px;
+    border-radius: 4px;
+  }
+  .workflow-stage {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 32px;
+    align-items: start;
+    padding: 24px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .workflow-stage:last-child { border-bottom: none; }
+  .stage-label {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 18px;
+    color: var(--accent);
+    padding-top: 4px;
+  }
+  .stage-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+  }
+  .stage-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    padding: 14px 16px;
+    border-radius: 3px;
+  }
+  .stage-card .label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .stage-card .desc {
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .arrow-down {
+    text-align: center;
+    color: var(--gold);
+    font-size: 18px;
+    margin: 8px 0;
+    grid-column: 1 / -1;
+  }
+
+  /* OUTPUT STRUCTURE */
+  .output-list {
+    counter-reset: output;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .output-list li {
+    counter-increment: output;
+    background: var(--bg-card);
+    padding: 28px 24px;
+    position: relative;
+  }
+  .output-list li::before {
+    content: counter(output, decimal-leading-zero);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .output-list h4 {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+  .output-list p {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+
+  /* TEACHERS */
+  .teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .teacher {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    padding: 28px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .teacher::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent);
+  }
+  .teacher h4 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--ink);
+  }
+  .teacher .role {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .teacher .focus {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin-bottom: 14px;
+  }
+  .teacher .citation {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--accent);
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+  }
+
+  /* DIRECTIVES TABLE */
+  .directives-frame {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .directives-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--bg-deep);
+    color: #F5EFE4;
+  }
+  .directives-header div {
+    padding: 18px 28px;
+    font-family: var(--serif);
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .directives-header div:first-child {
+    border-right: 1px solid #4A3F35;
+  }
+  .directive-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--line);
+  }
+  .directive-row > div {
+    padding: 20px 28px;
+    font-size: 15px;
+  }
+  .directive-row > div:first-child {
+    border-right: 1px solid var(--line);
+    color: var(--teal);
+    font-weight: 500;
+  }
+  .directive-row > div:last-child {
+    color: var(--accent);
+    font-style: italic;
+    font-family: var(--serif);
+  }
+
+  /* PUSHBACK STEPS */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .step {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    padding: 28px 24px;
+    border-radius: 4px;
+    position: relative;
+  }
+  .step .num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 56px;
+    line-height: 1;
+    color: var(--accent);
+    opacity: 0.25;
+    position: absolute;
+    top: 18px;
+    right: 22px;
+  }
+  .step h4 {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--ink);
+    position: relative;
+    z-index: 2;
+  }
+  .step p {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* INSTALL */
+  .install {
+    background: var(--bg-deep);
+    color: #F5EFE4;
+    padding: 60px 48px;
+    border-radius: 4px;
+    margin-top: 40px;
+  }
+  .install h3 {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .install h3 em { font-style: italic; color: #D4A87A; }
+  .install p {
+    font-size: 15px;
+    color: #C8BDA8;
+    line-height: 1.7;
+    max-width: 640px;
+    margin-bottom: 24px;
+  }
+  .install ol {
+    counter-reset: install;
+    list-style: none;
+    max-width: 640px;
+  }
+  .install ol li {
+    counter-increment: install;
+    padding: 12px 0 12px 48px;
+    position: relative;
+    border-bottom: 1px solid #4A3F35;
+    color: #E8DEC9;
+    font-size: 15px;
+  }
+  .install ol li:last-child { border-bottom: none; }
+  .install ol li::before {
+    content: counter(install, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: #D4A87A;
+    letter-spacing: 0.1em;
+  }
+  .install code {
+    font-family: var(--mono);
+    background: rgba(212, 168, 122, 0.15);
+    color: #D4A87A;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 13px;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 60px 0 80px;
+    color: var(--ink-mute);
+  }
+  footer .quote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 560px;
+    margin: 0 auto 16px;
+  }
+  footer .ref {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  /* DECORATIVE FLOURISH */
+  .flourish {
+    text-align: center;
+    margin: 32px 0;
+    color: var(--gold);
+    opacity: 0.5;
+    font-size: 14px;
+    letter-spacing: 1em;
+  }
+
+  @media (max-width: 720px) {
+    .workflow-stage { grid-template-columns: 1fr; gap: 12px; }
+    .directives-header div, .directive-row > div { padding: 14px 18px; font-size: 13px; }
+    .install { padding: 40px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow">Skill Overview · Anthropic Claude</div>
+    <h1 class="title">Deep Bible Study<br><em>Devotional</em></h1>
+    <p class="subtitle">A repeatable workflow for walking chapter-by-chapter through Scripture with Hebrew word work, integrated cross-references, and the voices of trusted teachers.</p>
+    <div class="hero-meta">
+      <div class="meta-item"><strong>66</strong>books in scope</div>
+      <div class="meta-item"><strong>6</strong>trusted teachers</div>
+      <div class="meta-item"><strong>12</strong>output sections</div>
+      <div class="meta-item"><strong>4</strong>reference docs</div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-num">§ 01 · The Workflow</div>
+    <h2 class="section-title">From a chapter and a verse, <em>to a study with depth</em></h2>
+    <p class="section-lede">She arrives with three things, the skill applies six layers, and the output follows a tested structure that has carried real conversations.</p>
+
+    <div class="workflow-card">
+      <div class="workflow-stage">
+        <div class="stage-label">She brings</div>
+        <div class="stage-cards">
+          <div class="stage-card"><div class="label">The chapter</div><div class="desc">e.g. Isaiah 3</div></div>
+          <div class="stage-card"><div class="label">What stood out</div><div class="desc">Themes she noticed</div></div>
+          <div class="stage-card"><div class="label">The verse</div><div class="desc">The one that hit hardest</div></div>
+        </div>
+      </div>
+      <div class="arrow-down">↓</div>
+      <div class="workflow-stage">
+        <div class="stage-label">The skill applies</div>
+        <div class="stage-cards">
+          <div class="stage-card"><div class="label">Hebrew & Greek</div><div class="desc">Original script with transliteration</div></div>
+          <div class="stage-card"><div class="label">Cross-canon links</div><div class="desc">Missler integrated message</div></div>
+          <div class="stage-card"><div class="label">Trusted voices</div><div class="desc">Stone, Missler, Bennett, Cahn, Reveré</div></div>
+          <div class="stage-card"><div class="label">Modern bridge</div><div class="desc">Ancient text in present moment</div></div>
+          <div class="stage-card"><div class="label">Spiritual warfare</div><div class="desc">Eden directives lens</div></div>
+          <div class="stage-card"><div class="label">Scripture anchor</div><div class="desc">Gentle redirect from drift</div></div>
+        </div>
+      </div>
+      <div class="arrow-down">↓</div>
+      <div class="workflow-stage">
+        <div class="stage-label">She receives</div>
+        <div class="stage-cards">
+          <div class="stage-card"><div class="label">A devotional</div><div class="desc">800 to 1,500 words of depth, structured for study</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">§ 02 · Output Structure</div>
+    <h2 class="section-title">Twelve sections, <em>each earning its place</em></h2>
+    <p class="section-lede">Every devotional follows the same arc. Familiar enough to feel grounded, flexible enough to honor each chapter's distinct voice.</p>
+
+    <ol class="output-list">
+      <li><h4>Opening visual hook</h4><p>A meme or image that lands the chapter's punch in modern terms.</p></li>
+      <li><h4>Title block</h4><p>Book, chapter, and a four-to-eight-word theme phrase that crystallizes the heart.</p></li>
+      <li><h4>Setting the stage</h4><p>Historical context, original audience, the chapter's central thrust.</p></li>
+      <li><h4>Themed body sections</h4><p>Five to nine emoji-headed passes through the chapter's structure.</p></li>
+      <li><h4>The featured verse</h4><p>Her chosen verse gets the deepest treatment, with Hebrew or Greek work.</p></li>
+      <li><h4>Original-language studies</h4><p>Script, transliteration, semantic range, and why it matters here.</p></li>
+      <li><h4>Cross-references</h4><p>Old Testament to New Testament threads showing the canon as one story.</p></li>
+      <li><h4>Trusted teacher voices</h4><p>Two to four citations woven naturally, never name-dropped.</p></li>
+      <li><h4>Modern application</h4><p>The bridge from ancient prophet to 2026 culture without forcing it.</p></li>
+      <li><h4>Spiritual warfare layer</h4><p>The unseen war made visible when the chapter calls for it.</p></li>
+      <li><h4>Closing reflection</h4><p>Compression, present-tense believer position, forward hope.</p></li>
+      <li><h4>Hook to next chapter</h4><p>Anticipation that makes tomorrow's reading feel essential.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">§ 03 · Trusted Teachers</div>
+    <h2 class="section-title">The voices that <em>confirm and illuminate</em></h2>
+    <p class="section-lede">Six teachers she trusts, each with a distinct emphasis. The skill cites them where they fit, never fabricates quotes, and always returns the authority to Scripture itself.</p>
+
+    <div class="teachers-grid">
+      <div class="teacher">
+        <h4>Perry Stone</h4>
+        <div class="role">Hebrew Roots · Prophecy</div>
+        <p class="focus">Hebrew word studies, the feasts of Israel as prophetic patterns, end-times prophecy with focus on Israel, spiritual warfare and the supernatural.</p>
+        <div class="citation">"Perry Stone has noted the weight of this contrast..."</div>
+      </div>
+      <div class="teacher">
+        <h4>Chuck Missler</h4>
+        <div class="role">Integrated Message System</div>
+        <p class="focus">The Bible as one unified document with cross-canonical patterns, typology, the design of Scripture as the teaching point, Genesis 6, technical depth.</p>
+        <div class="citation">"Missler used to call this an integrated message system..."</div>
+      </div>
+      <div class="teacher">
+        <h4>Dr. John Barnett</h4>
+        <div class="role">Discover the Book Ministries</div>
+        <p class="focus">Verse-by-verse exposition with Bob Jones and Dallas Theological Seminary credentials. Pre-tribulation rapture framework. DTBM serves believers in 160+ countries with daily teaching.</p>
+        <div class="citation">"Dr. Barnett of DTBM teaches that..."</div>
+      </div>
+      <div class="teacher">
+        <h4>Jonathan Cahn</h4>
+        <div class="role">Hebrew Patterns · America</div>
+        <p class="focus">Hebrew language and Jewish context, America paralleling ancient Israel's pattern, prophetic patterns in dates and signs, Jubilee and Shemitah cycles.</p>
+        <div class="citation">"In Cahn's framework..."</div>
+      </div>
+      <div class="teacher">
+        <h4>John Bevere</h4>
+        <div class="role">Day of the Lord · Fear of God</div>
+        <p class="focus">Founder of Messenger International. The fear of the Lord, the day of God's wrath, the distinction between tribulation and wrath, the cost of true discipleship. Recently affirmed pre-trib position.</p>
+        <div class="citation">"Bevere has taught extensively that..."</div>
+      </div>
+      <div class="teacher">
+        <h4>Dr. Bill Creasy</h4>
+        <div class="role">Literary Unity · UCLA</div>
+        <p class="focus">Thirty years teaching the English Bible as Literature at UCLA. Founder of Logos Bible Study. Reads Scripture as a unified literary work — the curtain rises in Genesis and falls in Revelation.</p>
+        <div class="citation">"Dr. Creasy reads this passage as..."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">§ 04 · The Eden Directives</div>
+    <h2 class="section-title">God's design <em>and Satan's counterfeit</em></h2>
+    <p class="section-lede">A unifying framework that emerged in the original conversation. For every directive God gave in Eden, the enemy runs a counterfeit. The whole story of Scripture documents this war and its restoration.</p>
+
+    <div class="directives-frame">
+      <div class="directives-header">
+        <div>God's directive</div>
+        <div>Satan's counterfeit</div>
+      </div>
+      <div class="directive-row">
+        <div>Identity in God's image (Gen 1:27)</div>
+        <div>Identity in performance and appearance</div>
+      </div>
+      <div class="directive-row">
+        <div>Fruitfulness for generations (Gen 1:28)</div>
+        <div>Accumulation for self</div>
+      </div>
+      <div class="directive-row">
+        <div>Stewardship under God (Gen 1:28)</div>
+        <div>Power and exploitation over others</div>
+      </div>
+      <div class="directive-row">
+        <div>Work as worship (Gen 2:15)</div>
+        <div>Work as identity and survival</div>
+      </div>
+      <div class="directive-row">
+        <div>Covenant relationship (Gen 2:18)</div>
+        <div>Isolation and transactional connection</div>
+      </div>
+      <div class="directive-row">
+        <div>Rest as trust (Gen 2:3)</div>
+        <div>Endless productivity and consumption</div>
+      </div>
+      <div class="directive-row">
+        <div>Truth from God's word (Gen 2:16)</div>
+        <div>Doubt, relativism, redefined reality</div>
+      </div>
+    </div>
+
+    <div class="flourish">✦ ✦ ✦</div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">§ 05 · The Pushback Pattern</div>
+    <h2 class="section-title">When passion drifts <em>past Scripture</em></h2>
+    <p class="section-lede">Sometimes a serious truth-seeker brings claims that drift into unverified territory. The goal is never to lecture or shut down. The goal is to strengthen the study by anchoring it firmly to the rock.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h4>Affirm the spiritual instinct</h4>
+        <p>Find the genuinely scriptural truth in the concern and validate it clearly. Most drift starts from a real instinct.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h4>Pump the brakes gently</h4>
+        <p>Use language of respect, not correction. Never lecture. The instinct was right, the specific claim needs anchoring.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h4>Redirect to Scripture</h4>
+        <p>Show how the text addresses the underlying concern more powerfully than the speculative claim. Deepen the point.</p>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <h4>Honor the teachers' method</h4>
+        <p>Missler, Stone, Cahn, Bennett, and Reveré are respected because they stay anchored. Practice what they practice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">§ 06 · Installation</div>
+    <h2 class="section-title">Get this <em>running for her</em></h2>
+    <p class="section-lede">The .skill file is ready. Once installed, it triggers automatically the moment she names a chapter and shares what stood out.</p>
+
+    <div class="install">
+      <h3>Three steps <em>and you're live</em></h3>
+      <p>The skill file is packaged with everything inside: the main playbook, four reference docs, and a worked example from Isaiah 1.</p>
+      <ol>
+        <li>Open <code>claude.ai</code> settings on her account</li>
+        <li>Navigate to <code>Capabilities</code> then <code>Skills</code></li>
+        <li>Drag <code>_deep-bible-study-devotional.skill</code> into the upload zone</li>
+      </ol>
+      <p style="margin-top: 24px; color: #A89881;">After that she can simply say "let's do Isaiah 5 today" and the skill triggers on its own. No special phrasing needed.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="quote">"The whole Bible is God saying: I haven't changed the plan. I'm still after what I always wanted. You. Whole. Home."</p>
+    <p class="ref">From the Eden Directives Reference</p>
+  </div>
+</footer>
+
+</body>
+</html>

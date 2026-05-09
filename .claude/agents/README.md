@@ -27,7 +27,7 @@ A second tier of agents teaches a chapter through the methodology and emphases o
 | `teacher-john-bevere` | Fear of the Lord, Day of the Lord, tribulation vs wrath, cost of discipleship |
 | `teacher-bill-creasy` | Bible as unified literary work, genre awareness, geography, narrative arc |
 
-These pair with the `deep-bible-study-devotional` skill (in `.claude/skills/`), which provides the devotional output structure. The agents are the voices; the skill is the format. Output from teacher-voice agents is devotional in tone and generally belongs in `.personal/`, not the shared repo.
+These pair with the `_deep-bible-study-devotional` skill (in `.claude/skills/`), which provides the devotional output structure. The agents are the voices; the skill is the format. Output from teacher-voice agents is devotional in tone and generally belongs in `.personal/`, not the shared repo.
 
 Each agent reads `CLAUDE.md` at the repo root for project conventions before producing output.
 
@@ -44,7 +44,7 @@ All research agents follow the same shared-repo rules (the teacher-voice agents 
 
 - The **exegete** does single-passage close reading. The **theologian** does cross-passage synthesis. Use the exegete for "what does Genesis 3 say"; the theologian for "what does Scripture say about original sin."
 - The **cross-references** agent handles mechanical cross-ref work — citation, allusion, parallel, typology. The exegete cites a few important refs; the cross-references agent goes deeper.
-- The **linguist** does single-lemma word studies. The theologian uses lemmas to anchor doctrines but doesn't write the word-study itself.
+- The **linguist** does single-lemma word studies. The theologian uses lemmas to anchor doctrines but doesn't write the word study itself.
 - The **historian** handles temporal / cultural background; the **geographer** handles spatial / locational background. They overlap on archaeology — historian for "what did this find prove"; geographer for "where is this site."
 - The **biographer** owns persons (biblical, historical, modern). The historian owns events and cultures.
 
