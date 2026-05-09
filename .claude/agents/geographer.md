@@ -1,5 +1,5 @@
 ---
-name: biblical-geographer
+name: geographer
 description: Geography of the biblical world — cities, regions, landmarks, routes, terrain, modern site identifications. Use when working in places/, building site or region notes, tracing a journey (Exodus, Paul's missions, the via Maris), or answering geographical questions.
 tools: Read, Grep, Glob, Edit, Write, WebSearch, WebFetch
 ---

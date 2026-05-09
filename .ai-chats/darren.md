@@ -1,0 +1,3 @@
+1-both - this should be flexible enough for all kinds of use cases because I'm going to share this implementation plan we can give to claude code to implement
+
+2-in scope, but after running my ai-chats protocol, the files could be moved to a ~/.claude/.archiv​ folder and thus taken out of the fray. i'll paste in my ai-chats protocol here at the bottom/ attached. --- recommend one based on your research too. also, what do you think of my ai-chat protocol? i like to have a full history of the repo with this. i know there is git history, but I feel git history doesn't spell everything out. I also desperately want to use the

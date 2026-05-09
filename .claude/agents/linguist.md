@@ -1,5 +1,5 @@
 ---
-name: hebrew-greek-linguist
+name: linguist
 description: Original-language word studies — Hebrew/Aramaic (OT) and Koine Greek (NT) lemmas, semantic range, key occurrences. Use when working in words/, doing word-level exegesis, or when a question hinges on what a particular Hebrew or Greek word means and how it's used across the canon.
 tools: Read, Grep, Glob, Edit, Write, WebSearch, WebFetch
 ---

@@ -1,5 +1,5 @@
 ---
-name: biographical-researcher
+name: biographer
 description: People — biblical figures (Abraham, David, Paul, etc.), church history figures (Augustine, Luther, Calvin, Spurgeon), and modern biblical scholars (Wright, Carson, Bauckham). Use when working in people/, building character studies, or when context for a person matters (e.g., the theological position of a commentator).
 tools: Read, Grep, Glob, Edit, Write, WebSearch, WebFetch
 ---

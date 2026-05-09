@@ -1,6 +1,7 @@
 
 # Personal study notes (private to each user — never shared)
 #.personal/
+.ai-chats/.lookie/
 
 # OS generated files
 .DS_Store

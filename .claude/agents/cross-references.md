@@ -1,5 +1,5 @@
 ---
-name: cross-reference-curator
+name: cross-references
 description: Cross-references, NT use of OT, parallel passages, typology. Use when populating the Cross References section of a chapter README, tracing a thread of citations through Scripture, identifying parallel accounts (Synoptics, Kings/Chronicles, Psalms doublets), or mapping typological connections.
 tools: Read, Grep, Glob, Edit, Write, WebSearch, WebFetch
 ---

@@ -6,13 +6,13 @@ This directory holds the project's specialized subagents. Claude Code loads them
 
 | Agent | Use when |
 |-------|----------|
-| `scripture-exegete` | Filling in or improving a chapter README; close reading of a single passage |
-| `biblical-theologian` | Doctrinal questions; topical / thematic studies in `topics/` or `theology/` |
-| `hebrew-greek-linguist` | Building word-study notes in `words/`; questions hinging on a Hebrew or Greek word |
-| `biblical-historian` | Historical, cultural, archaeological context |
-| `biblical-geographer` | Notes for `places/`; geography or routes (Exodus, Paul's journeys) |
-| `biographical-researcher` | Notes for `people/` — biblical figures, church history, modern scholars |
-| `cross-reference-curator` | Cross-References sections; tracing citation / allusion threads |
+| `exegete` | Filling in or improving a chapter README; close reading of a single passage |
+| `theologian` | Doctrinal questions; topical / thematic studies in `topics/` or `theology/` |
+| `linguist` | Building word-study notes in `words/`; questions hinging on a Hebrew or Greek word |
+| `historian` | Historical, cultural, archaeological context |
+| `geographer` | Notes for `places/`; geography or routes (Exodus, Paul's journeys) |
+| `biographer` | Notes for `people/` — biblical figures, church history, modern scholars |
+| `cross-references` | Cross-References sections; tracing citation / allusion threads |
 
 ### Teacher-voice agents
 
@@ -20,12 +20,12 @@ A second tier of agents teaches a chapter through the methodology and emphases o
 
 | Agent | Lens |
 |-------|------|
-| `bible-teacher-perry-stone` | Hebrew roots, festival typology, prophetic patterns, spiritual warfare |
-| `bible-teacher-chuck-missler` | Integrated message system, typology, Christ-types, design of Scripture |
-| `bible-teacher-john-barnett` | Verse-by-verse, dispensational, pre-trib, practical discipleship |
-| `bible-teacher-jonathan-cahn` | Hebrew word studies, ancient-to-modern prophetic parallels, Shemitah/Jubilee |
-| `bible-teacher-john-bevere` | Fear of the Lord, Day of the Lord, tribulation vs wrath, cost of discipleship |
-| `bible-teacher-bill-creasy` | Bible as unified literary work, genre awareness, geography, narrative arc |
+| `teacher-perry-stone` | Hebrew roots, festival typology, prophetic patterns, spiritual warfare |
+| `teacher-chuck-missler` | Integrated message system, typology, Christ-types, design of Scripture |
+| `teacher-john-barnett` | Verse-by-verse, dispensational, pre-trib, practical discipleship |
+| `teacher-jonathan-cahn` | Hebrew word studies, ancient-to-modern prophetic parallels, Shemitah/Jubilee |
+| `teacher-john-bevere` | Fear of the Lord, Day of the Lord, tribulation vs wrath, cost of discipleship |
+| `teacher-bill-creasy` | Bible as unified literary work, genre awareness, geography, narrative arc |
 
 These pair with the `deep-bible-study-devotional` skill (in `.claude/skills/`), which provides the devotional output structure. The agents are the voices; the skill is the format. Output from teacher-voice agents is devotional in tone and generally belongs in `.personal/`, not the shared repo.
 
@@ -42,11 +42,11 @@ All research agents follow the same shared-repo rules (the teacher-voice agents 
 
 ## How agents divide labor
 
-- The **scripture-exegete** does single-passage close reading. The **biblical-theologian** does cross-passage synthesis. Use the exegete for "what does Genesis 3 say"; the theologian for "what does Scripture say about original sin."
-- The **cross-reference-curator** does mechanical cross-ref work — citation, allusion, parallel, typology. The exegete cites a few important refs; the curator goes deeper.
-- The **hebrew-greek-linguist** does single-lemma word studies. The theologian uses lemmas to anchor doctrines but doesn't write the word-study itself.
-- The **biblical-historian** handles temporal / cultural background; the **biblical-geographer** handles spatial / locational background. They overlap on archaeology — historian for "what did this find prove"; geographer for "where is this site."
-- The **biographical-researcher** owns persons (biblical, historical, modern). The historian owns events and cultures.
+- The **exegete** does single-passage close reading. The **theologian** does cross-passage synthesis. Use the exegete for "what does Genesis 3 say"; the theologian for "what does Scripture say about original sin."
+- The **cross-references** agent handles mechanical cross-ref work — citation, allusion, parallel, typology. The exegete cites a few important refs; the cross-references agent goes deeper.
+- The **linguist** does single-lemma word studies. The theologian uses lemmas to anchor doctrines but doesn't write the word-study itself.
+- The **historian** handles temporal / cultural background; the **geographer** handles spatial / locational background. They overlap on archaeology — historian for "what did this find prove"; geographer for "where is this site."
+- The **biographer** owns persons (biblical, historical, modern). The historian owns events and cultures.
 
 When more than one agent could fit, the main Claude should pick the *narrowest* one — depth over breadth.
 
@@ -58,6 +58,6 @@ To add an eighth agent, copy any existing file as a template and update `name`, 
 
 Candidates the planning doc (`____bible-study-top-level-folders.md`) suggests but the team currently lacks:
 
-- A **timeline / chronology** specialist (overlaps with `biblical-historian`).
+- A **timeline / chronology** specialist (overlaps with `historian`).
 - A **commentary curator** that knows the landscape of major commentary series (NICOT / NICNT, BECNT, Word, Pillar, Hermeneia, Tyndale, ICC).
 - A **homiletics / teaching** specialist for `teaching/` — but this is the kind of content that belongs more in `.personal/` than in the shared repo.

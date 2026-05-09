@@ -6,12 +6,12 @@ A collection of six Claude Code subagents, each modeled after a distinct Bible t
 
 | File | Agent name | Lens | Best for |
 |---|---|---|---|
-| `perry-stone.md` | `bible-teacher-perry-stone` | Hebrew roots, prophetic patterns, festival typology, supernatural/spiritual warfare | Israel, the prophets, the feasts, end-times, demonology |
-| `chuck-missler.md` | `bible-teacher-chuck-missler` | Integrated message system, typology, mathematical patterns, Genesis 6 / Nephilim | Cross-canonical connections, Christ-types, design of Scripture |
-| `john-barnett.md` | `bible-teacher-john-barnett` | Verse-by-verse exposition, dispensational, pre-trib, practical discipleship | Revelation, Daniel, Olivet Discourse, expositional teaching |
-| `jonathan-cahn.md` | `bible-teacher-jonathan-cahn` | Hebrew word studies, ancient-to-modern prophetic parallels, Shemitah/Jubilee cycles | Prophetic books, national judgment passages, current-events resonance |
-| `john-bevere.md` | `bible-teacher-john-bevere` | Fear of the Lord, Day of the Lord, tribulation vs wrath, cost of discipleship | 1-2 Thessalonians, 2 Peter, Olivet Discourse, eschatology with hope |
-| `bill-creasy.md` | `bible-teacher-bill-creasy` | Bible as unified literary work, genre awareness, geography, narrative arc | Historical narratives, wisdom literature, anything in Israel's geography |
+| `teacher-perry-stone.md` | `teacher-perry-stone` | Hebrew roots, prophetic patterns, festival typology, supernatural/spiritual warfare | Israel, the prophets, the feasts, end-times, demonology |
+| `teacher-chuck-missler.md` | `teacher-chuck-missler` | Integrated message system, typology, mathematical patterns, Genesis 6 / Nephilim | Cross-canonical connections, Christ-types, design of Scripture |
+| `teacher-john-barnett.md` | `teacher-john-barnett` | Verse-by-verse exposition, dispensational, pre-trib, practical discipleship | Revelation, Daniel, Olivet Discourse, expositional teaching |
+| `teacher-jonathan-cahn.md` | `teacher-jonathan-cahn` | Hebrew word studies, ancient-to-modern prophetic parallels, Shemitah/Jubilee cycles | Prophetic books, national judgment passages, current-events resonance |
+| `teacher-john-bevere.md` | `teacher-john-bevere` | Fear of the Lord, Day of the Lord, tribulation vs wrath, cost of discipleship | 1-2 Thessalonians, 2 Peter, Olivet Discourse, eschatology with hope |
+| `teacher-bill-creasy.md` | `teacher-bill-creasy` | Bible as unified literary work, genre awareness, geography, narrative arc | Historical narratives, wisdom literature, anything in Israel's geography |
 
 ## Installation
 
@@ -61,7 +61,7 @@ Each agent is a single Markdown file with YAML frontmatter:
 
 ```markdown
 ---
-name: bible-teacher-{name}
+name: {name}
 description: When to use this agent (detailed and pushy for reliable triggering)
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: biblical-historian
+name: historian
 description: Historical, cultural, and archaeological background to the biblical world — Ancient Near East, intertestamental period, Greco-Roman world, dating, archaeology. Use when establishing context for a passage, building out historical/cultural notes, or when a question hinges on extrabiblical evidence.
 tools: Read, Grep, Glob, Edit, Write, WebSearch, WebFetch
 ---

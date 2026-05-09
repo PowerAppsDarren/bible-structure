@@ -53,22 +53,22 @@ Two tiers of subagents are committed under `.claude/agents/` and load automatica
 
 **Research / theology agents** (output for the shared repo):
 
-- `scripture-exegete` — single-passage close reading; chapter-README content
-- `biblical-theologian` — systematic / biblical theology; topical studies
-- `hebrew-greek-linguist` — Hebrew / Greek word studies
-- `biblical-historian` — ANE / Second Temple / Greco-Roman background
-- `biblical-geographer` — places, regions, routes
-- `biographical-researcher` — biblical figures, church history, modern scholars
-- `cross-reference-curator` — citations, allusions, parallels, typology
+- `exegete` — single-passage close reading; chapter-README content
+- `theologian` — systematic / biblical theology; topical studies
+- `linguist` — Hebrew / Greek word studies
+- `historian` — ANE / Second Temple / Greco-Roman background
+- `geographer` — places, regions, routes
+- `biographer` — biblical figures, church history, modern scholars
+- `cross-references` — citations, allusions, parallels, typology
 
 **Teacher-voice agents** (devotional output, usually for `.personal/`) — apply a specific teacher's hermeneutical lens without impersonating them:
 
-- `bible-teacher-perry-stone` — Hebrew roots, festival typology, prophetic patterns
-- `bible-teacher-chuck-missler` — integrated message system, typology, Christ-types
-- `bible-teacher-john-barnett` — verse-by-verse, dispensational, pre-trib
-- `bible-teacher-jonathan-cahn` — Hebrew word studies, prophetic parallels, Shemitah
-- `bible-teacher-john-bevere` — fear of the Lord, Day of the Lord, wrath vs tribulation
-- `bible-teacher-bill-creasy` — Bible as unified literary work, genre, geography
+- `teacher-perry-stone` — Hebrew roots, festival typology, prophetic patterns
+- `teacher-chuck-missler` — integrated message system, typology, Christ-types
+- `teacher-john-barnett` — verse-by-verse, dispensational, pre-trib
+- `teacher-jonathan-cahn` — Hebrew word studies, prophetic parallels, Shemitah
+- `teacher-john-bevere` — fear of the Lord, Day of the Lord, wrath vs tribulation
+- `teacher-bill-creasy` — Bible as unified literary work, genre, geography
 
 The teacher-voice agents pair with the `deep-bible-study-devotional` skill in `.claude/skills/`, which provides the devotional output structure.
 

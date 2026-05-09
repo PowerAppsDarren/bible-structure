@@ -1,8 +1,62 @@
 {
   "workbench.colorCustomizations": {
     "terminal.background": "#171717",
-    "terminal.foreground": "#00FF00"
+    "terminal.foreground": "#00FF00",
+    "textCodeBlock.background": "#1e1e1e",
+    "gitDecoration.untrackedResourceForeground": "#FF00FF",
+    "gitDecoration.addedResourceForeground": "#FF00FF",
+    "gitDecoration.modifiedResourceForeground": "#FFAA33",
+    "gitDecoration.deletedResourceForeground": "#FF2D2D",
+    "gitDecoration.renamedResourceForeground": "#00E5FF",
+    "gitDecoration.conflictingResourceForeground": "#FF00FF",
+    "gitDecoration.ignoredResourceForeground": "#999999",
+    "gitDecoration.stageModifiedResourceForeground": "#FFD500",
+    "gitDecoration.stageDeletedResourceForeground": "#FF2D2D",
+    "gitDecoration.submoduleResourceForeground": "#00E5FF",
+    "list.warningForeground": "#FFAA33",
+    "list.errorForeground": "#FF2D2D",
+    "problemsWarningIcon.foreground": "#FFAA33",
+    "problemsErrorIcon.foreground": "#FF2D2D",
+    "problemsInfoIcon.foreground": "#00E5FF",
+    "editorWarning.foreground": "#FFAA33",
+    "editorError.foreground": "#FF2D2D",
+    "editorInfo.foreground": "#00E5FF",
+    "sideBar.foreground": "#4DA6FF",
+    "list.activeSelectionForeground": "#4DA6FF",
+    "list.inactiveSelectionForeground": "#4DA6FF",
+    "list.hoverForeground": "#4DA6FF",
+    "list.focusForeground": "#4DA6FF"
   },
   "terminal.integrated.fontFamily": "Cascadia Code",
-  "terminal.integrated.fontWeight": 600
+  "terminal.integrated.fontWeight": 600,
+  "terminal.integrated.fontSize": 17,
+  "markdown.styles": ["markdown.css"],
+  "apc.font.family": "Cascadia Code",
+  "apc.monospace.font.family": "Cascadia Code",
+  "apc.font.weight": "600",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "markup.inline.raw.string.markdown",
+          "markup.inline.raw.markdown",
+          "markup.fenced_code.block.markdown",
+          "punctuation.definition.raw.markdown"
+        ],
+        "settings": {
+          "foreground": "#FFD866",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "meta.embedded.block.markdown",
+          "markup.raw.block.markdown"
+        ],
+        "settings": {
+          "foreground": "#E6E6E6"
+        }
+      }
+    ]
+  }
 }
