@@ -1,0 +1,8 @@
+{
+  "workbench.colorCustomizations": {
+    "terminal.background": "#171717",
+    "terminal.foreground": "#00FF00"
+  },
+  "terminal.integrated.fontFamily": "Cascadia Code",
+  "terminal.integrated.fontWeight": 600
+}
