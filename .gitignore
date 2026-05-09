@@ -1,6 +1,8 @@
+# .personal/ is intentionally TRACKED (not gitignored).
+# Each user has a folder named by their email address under .personal/
+# (e.g., .personal/darren@neese.us/). Members share notes via git push/pull;
+# privacy is by convention. See .personal/README.md and CLAUDE.md.
 
-# Personal study notes (private to each user — never shared)
-#.personal/
 .ai-chats/.lookie/
 
 # OS generated files

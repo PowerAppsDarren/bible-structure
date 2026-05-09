@@ -27,12 +27,18 @@ The stub content folders each contain a one-line `# Read Me` placeholder. The 12
 
 **Before "fixing" the inconsistency in either direction, ask the user which side is canonical.** Don't silently rewrite the docs to match disk, and don't move folders to match the docs. Both are plausible intents.
 
-## Two-layer model: shared vs. personal
+## Two-layer model: shared vs. shared-personal (multi-user)
 
-- Everything outside `.personal/` is **shared** reference material — factual content that benefits everyone (book overviews, key verses, cross-references, people, places, timelines). Changes go through PRs.
-- `.personal/` is for the user's private study notes — reflections, prayers, journal entries, sermon notes. The `CONTRIBUTING.md` rule: if it's a fact, it's shared; if it's *your thought*, it's personal.
+The repo is designed for small-group / church use. Two layers:
 
-**Caveat on `.gitignore`:** line 3 (`#.personal/`) is currently **commented out**, even though `README.md` and `CONTRIBUTING.md` state `.personal/` is gitignored and never pushed. The `.personal/` directory currently contains tracked content (`README.md`, `Isaiah/`). If a task involves staging changes, do not assume `.personal/` is excluded — check `git status` and stage explicit paths rather than `git add -A`.
+- **Shared layer** — everything outside `.personal/` (`scripture/`, `topics/`, `words/`, `people/`, `places/`, `theology/`, etc.). Factual reference material that benefits everyone, changed via PR.
+- **Shared-personal layer** — `.personal/<user-email>/`: each user has a folder named by their email address (e.g., `.personal/darren@neese.us/`). Personal reflections, journals, prayer notes, teaching prep. The folder is **intentionally tracked in git** (not gitignored). Members share by pushing; privacy is by convention. See `.personal/README.md`.
+
+`CONTRIBUTING.md` rule: fact = shared; *your thought* = `.personal/<your-email>/`. Never write inside another user's email folder — that space is read-only by convention.
+
+**Two stale claims in older docs:**
+- `README.md`, `CONTRIBUTING.md`, and `CHANGELOG.md` 1.2.0 still describe `.personal/` as "gitignored, never pushed" — that's the old single-user paradigm. The multi-user paradigm above supersedes it. The `.gitignore` correctly does NOT exclude `.personal/`.
+- The published structure docs still describe `books-of-bible/` and `topics-of-study/` (see "Layout on disk vs. layout in the docs" above).
 
 ## Naming conventions
 
@@ -74,6 +80,18 @@ The teacher-voice agents pair with the `deep-bible-study-devotional` skill in `.
 
 See `.claude/agents/README.md` for how the agents divide labor and `.claude/agents/TEACHERS.md` for teacher-pairing suggestions. Each agent is told to read this CLAUDE.md before producing output, so updates here propagate.
 
+## Skills
+
+A coordinated battery of skills under `.claude/skills/` covers the four phases of small-group Bible study. Skills are **model-invoked** (Claude decides when to fire based on the user's message); user-typed shortcuts go in `.claude/commands/` (not yet present).
+
+- **Heavyweight chapter walk:** `deep-bible-study-devotional`
+- **Research:** `word-study`, `cross-reference-map`, `character-study`, `place-study`, `topic-trace`
+- **Group:** `group-discussion-prep`, `compare-notes` (multi-user — reads across `.personal/*/`)
+- **Personal:** `personal-reflection`, `prayer-from-passage` (write to `.personal/<email>/` only)
+- **Maintenance:** `chapter-readme-fill` (writes to shared `scripture/`)
+
+See `.claude/skills/README.md` for how skills compose with each other and with the agents. Skills enforce the two-layer discipline: shared output goes to top-level folders; personal output stays inside the user's email folder.
+
 ## AI-Chats protocol
 
 `.ai-chats/README.md` documents a self-imposed session-logging protocol (v3.2) the user actively maintains. Key rules:
@@ -86,7 +104,8 @@ See `.claude/agents/README.md` for how the agents divide labor and `.claude/agen
 
 ## Things to avoid
 
-- Don't run `git add -A` / `git add .` — `.gitignore` doesn't currently exclude `.personal/`, so a wildcard add can leak private notes into a commit. Stage explicit paths.
+- **Never write inside another user's `.personal/<email>/` folder.** Each user owns their own. Other users' folders are read-only by convention.
+- Don't `git add -A` paths outside the user's own email folder unless intentionally PR-ing shared content. The intentional-tracking of `.personal/` makes wildcard adds safer than they were under the old paradigm, but staying scoped is still good hygiene.
 - Don't invent build/test/lint commands. There is no toolchain here.
-- Don't fill chapter content with sermon-style or denominational commentary — that belongs in `.personal/`, not the shared repo.
+- Don't fill chapter content with sermon-style or denominational commentary — that belongs in `.personal/<your-email>/`, not the shared repo.
 - Don't reconcile the docs-vs-disk inconsistency without asking which side is canonical.
