@@ -14,11 +14,26 @@ This directory holds the project's specialized subagents. Claude Code loads them
 | `biographical-researcher` | Notes for `people/` — biblical figures, church history, modern scholars |
 | `cross-reference-curator` | Cross-References sections; tracing citation / allusion threads |
 
+### Teacher-voice agents
+
+A second tier of agents teaches a chapter through the methodology and emphases of a specific Bible teacher. They do **not** impersonate or fabricate quotes — they apply the teacher's hermeneutical lens. See `TEACHERS.md` for the full overview and pairing suggestions.
+
+| Agent | Lens |
+|-------|------|
+| `bible-teacher-perry-stone` | Hebrew roots, festival typology, prophetic patterns, spiritual warfare |
+| `bible-teacher-chuck-missler` | Integrated message system, typology, Christ-types, design of Scripture |
+| `bible-teacher-john-barnett` | Verse-by-verse, dispensational, pre-trib, practical discipleship |
+| `bible-teacher-jonathan-cahn` | Hebrew word studies, ancient-to-modern prophetic parallels, Shemitah/Jubilee |
+| `bible-teacher-john-bevere` | Fear of the Lord, Day of the Lord, tribulation vs wrath, cost of discipleship |
+| `bible-teacher-bill-creasy` | Bible as unified literary work, genre awareness, geography, narrative arc |
+
+These pair with the `deep-bible-study-devotional` skill (in `.claude/skills/`), which provides the devotional output structure. The agents are the voices; the skill is the format. Output from teacher-voice agents is devotional in tone and generally belongs in `.personal/`, not the shared repo.
+
 Each agent reads `CLAUDE.md` at the repo root for project conventions before producing output.
 
 ## Shared discipline
 
-All seven agents follow the same shared-repo rules:
+All research agents follow the same shared-repo rules (the teacher-voice agents follow them too, but their devotional output usually lands in `.personal/`):
 
 - **Two-layer model.** Output is for the *shared* repo — factual and reference-quality. Personal reflection belongs in `.personal/`.
 - **No copyrighted translations.** Use KJV / ASV / WEB or paraphrase. Cite chapter / verse, not extended text.

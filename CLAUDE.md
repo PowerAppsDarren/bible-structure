@@ -49,7 +49,9 @@ When filling chapter content: factual, reference-quality, study-Bible-margin ton
 
 ## Specialized agents
 
-Seven research / theology subagents are committed under `.claude/agents/` and load automatically. Use them via the Agent tool when work matches their specialization:
+Two tiers of subagents are committed under `.claude/agents/` and load automatically. Use them via the Agent tool when work matches their specialization.
+
+**Research / theology agents** (output for the shared repo):
 
 - `scripture-exegete` — single-passage close reading; chapter-README content
 - `biblical-theologian` — systematic / biblical theology; topical studies
@@ -59,7 +61,18 @@ Seven research / theology subagents are committed under `.claude/agents/` and lo
 - `biographical-researcher` — biblical figures, church history, modern scholars
 - `cross-reference-curator` — citations, allusions, parallels, typology
 
-See `.claude/agents/README.md` for how the agents divide labor and when to pick which. Each agent is told to read this CLAUDE.md before producing output, so updates here propagate.
+**Teacher-voice agents** (devotional output, usually for `.personal/`) — apply a specific teacher's hermeneutical lens without impersonating them:
+
+- `bible-teacher-perry-stone` — Hebrew roots, festival typology, prophetic patterns
+- `bible-teacher-chuck-missler` — integrated message system, typology, Christ-types
+- `bible-teacher-john-barnett` — verse-by-verse, dispensational, pre-trib
+- `bible-teacher-jonathan-cahn` — Hebrew word studies, prophetic parallels, Shemitah
+- `bible-teacher-john-bevere` — fear of the Lord, Day of the Lord, wrath vs tribulation
+- `bible-teacher-bill-creasy` — Bible as unified literary work, genre, geography
+
+The teacher-voice agents pair with the `deep-bible-study-devotional` skill in `.claude/skills/`, which provides the devotional output structure.
+
+See `.claude/agents/README.md` for how the agents divide labor and `.claude/agents/TEACHERS.md` for teacher-pairing suggestions. Each agent is told to read this CLAUDE.md before producing output, so updates here propagate.
 
 ## AI-Chats protocol
 
