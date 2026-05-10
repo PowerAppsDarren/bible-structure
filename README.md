@@ -60,6 +60,74 @@ This makes it easy to find your notes — they sit in the same path as the share
 3. Study. Use the shared content as reference. Write your personal notes in `.personal/`.
 4. To improve the shared content, open a pull request.
 
+## Memory & Retrieval (MemPalace)
+
+This repo is wired up to [MemPalace](https://github.com/mempalace/mempalace) — a local, semantic search index over the repo's content **and** every Claude Code conversation that has ever touched it. Nothing leaves your machine. No API key, no LLM required.
+
+### One-time install (per machine)
+
+```powershell
+winget install astral-sh.uv
+uv tool install mempalace
+```
+
+After install, restart your shell so `mempalace` and `mempalace-mcp` are on `PATH` (they live in `%USERPROFILE%\.local\bin`).
+
+### Initialize this repo's palace
+
+Run once after cloning:
+
+```powershell
+mempalace init . --yes --auto-mine --no-llm
+```
+
+This creates `mempalace.yaml` + `entities.json` (already in `.gitignore`), maps your top-level folders to "rooms" (`scripture/`, `topics/`, `words/`, `people/`, `places/`, `theology/`, `commentary/`, `resources/`, etc.), and indexes every file. The palace itself lives outside the repo at `~/.mempalace/palace`.
+
+### Pull in past Claude Code conversations
+
+```powershell
+mempalace mine "$env:USERPROFILE\.claude\projects\C--Users-DarrenNeese-src-bible-structure" --mode convos --wing bible_structure
+```
+
+Re-run any time after long Claude Code sessions to absorb new transcripts. (Auto-save hooks below handle this on the fly going forward.)
+
+### Daily use
+
+```powershell
+mempalace search "what did we decide about the chapter README format"
+mempalace search "Isaiah 1 notes" --wing bible_structure --room scripture
+mempalace status                  # what's been filed
+mempalace wake-up --wing bible_structure   # ~600-900 token context blob to paste into a fresh chat
+```
+
+### Auto-save hooks (already configured)
+
+`.claude/settings.json` registers three Claude Code hooks that run automatically:
+
+| Hook | When | What |
+|---|---|---|
+| `SessionStart` | new Claude Code session | loads palace context |
+| `Stop` | end of an assistant turn | persists the exchange |
+| `PreCompact` | before context compaction | snapshots the conversation so nothing is lost |
+
+If you're running Claude Code in this repo, these fire on their own — no action needed.
+
+### MCP server (already configured)
+
+`.mcp.json` exposes the palace to Claude Code as an MCP server (`mempalace-mcp`), so the agent can query memory natively without shelling out to the CLI. Approve it the first time Claude Code prompts you on this repo.
+
+### Useful commands
+
+```powershell
+mempalace --help                  # all commands
+mempalace status                  # palace contents
+mempalace mine .                  # re-mine repo files (incremental, skips unchanged)
+mempalace compress                # ~30x reduction on cold drawers
+mempalace mcp                     # show MCP setup string
+```
+
+---
+
 ## Documentation
 
 | Document                                 | Description                                  |
