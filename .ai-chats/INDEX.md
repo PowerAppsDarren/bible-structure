@@ -1,8 +1,8 @@
 # AI-Chats Master Index
 
 **Last Updated:** 2026-05-09
-**Total Sessions:** 9
-**Total Files:** 55 (session logs) + raw/ history
+**Total Sessions:** 10
+**Total Files:** 61 (session logs) + raw/ history
 
 ## 📋 Quick Navigation
 
@@ -17,6 +17,7 @@
 
 | Date       | Session | Model    | Topic                                              | Status      |
 |------------|---------|----------|----------------------------------------------------|-------------|
+| 2026-05-09 | 06      | Opus-4.7 | MemPalace install + hooks + MCP + README           | ✅ Complete |
 | 2026-05-09 | 05      | Opus-4.7 | Skills battery, multi-user paradigm, naming conventions | ✅ Complete |
 | 2026-05-09 | 04      | Opus-4.7 | VS Code theming, markdown CSS, Apc font, remote    | ✅ Complete |
 | 2026-05-09 | 03      | Opus-4.7 | Teacher-voice agents + deep-bible-study skill      | ✅ Complete |
@@ -49,6 +50,7 @@
 
 | Date       | Model    | Description                                                          |
 |------------|----------|----------------------------------------------------------------------|
+| 2026-05-09 | Opus-4.7 | MemPalace 3.3.4 installed via uv; SessionStart/Stop/PreCompact hooks; `.mcp.json` server; README "Memory & Retrieval" section; absolute-path fix for Git Bash hooks |
 | 2026-05-09 | Opus-4.7 | 10-skill battery, multi-user `.personal/<email>/` paradigm, `_` prefix convention, agent renames |
 | 2026-05-09 | Opus-4.7 | VS Code theming pass — explorer git decoration colors, markdown preview CSS, Apc workbench font, terminal 17px, remote → bible-study |
 | 2026-05-09 | Opus-4.7 | 6 teacher-voice agents + `_deep-bible-study-devotional` skill registered under `.claude/` |
@@ -63,6 +65,7 @@
 
 | Date       | Topic                                              | Files |
 |------------|----------------------------------------------------|-------|
+| 2026-05-09 | MemPalace install + hooks + MCP + README           | 6     |
 | 2026-05-09 | Skills battery, multi-user paradigm, naming conventions | 9     |
 | 2026-05-09 | VS Code theming, markdown CSS, Apc font, remote    | 24    |
 | 2026-05-09 | Teacher-voice agents + deep-bible-study skill      | 2     |
@@ -83,14 +86,23 @@
 
 | Metric                | Value              |
 |-----------------------|--------------------|
-| Total sessions        | 9                  |
+| Total sessions        | 10                 |
 | Models used           | Opus-4.5, Opus-4.7 |
-| Files created (total) | ~91                |
+| Files created (total) | ~97                |
 | Most active month     | January 2026       |
 
 ---
 
 ## Complete File Listing
+
+### 2026-05-09-06-mempalace-memory-setup/
+
+- [Opus-4.7--00.md](./2026-05-09-06-mempalace-memory-setup/Opus-4.7--00.md) — Main documentation
+- [Opus-4.7--01.md](./2026-05-09-06-mempalace-memory-setup/Opus-4.7--01.md) — Exchange 1: MemPalace request + scope/installer questions
+- [Opus-4.7--02.md](./2026-05-09-06-mempalace-memory-setup/Opus-4.7--02.md) — Exchange 2: uv not installed; chose winget
+- [Opus-4.7--03.md](./2026-05-09-06-mempalace-memory-setup/Opus-4.7--03.md) — Exchange 3: Install + init + mine + hooks + MCP + README update
+- [Opus-4.7--04.md](./2026-05-09-06-mempalace-memory-setup/Opus-4.7--04.md) — Exchange 4: Stop hook failed → switched to absolute path
+- [Opus-4.7--05.md](./2026-05-09-06-mempalace-memory-setup/Opus-4.7--05.md) — Exchange 5: Wrap up per AI-Chats Protocol v3.2
 
 ### 2026-05-09-05-skills-battery-and-conventions/
 
