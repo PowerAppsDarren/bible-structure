@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "mempalace": {
-      "command": "mempalace-mcp",
+      "command": "C:\\Users\\DarrenNeese\\.local\\bin\\mempalace-mcp.exe",
       "args": []
     }
   }
