@@ -1,8 +1,8 @@
 # AI-Chats Master Index
 
 **Last Updated:** 2026-05-09
-**Total Sessions:** 8
-**Total Files:** 46 (session logs) + raw/ history
+**Total Sessions:** 9
+**Total Files:** 55 (session logs) + raw/ history
 
 ## 📋 Quick Navigation
 
@@ -17,6 +17,7 @@
 
 | Date       | Session | Model    | Topic                                              | Status      |
 |------------|---------|----------|----------------------------------------------------|-------------|
+| 2026-05-09 | 05      | Opus-4.7 | Skills battery, multi-user paradigm, naming conventions | ✅ Complete |
 | 2026-05-09 | 04      | Opus-4.7 | VS Code theming, markdown CSS, Apc font, remote    | ✅ Complete |
 | 2026-05-09 | 03      | Opus-4.7 | Teacher-voice agents + deep-bible-study skill      | ✅ Complete |
 | 2026-05-09 | 02      | Opus-4.7 | CLAUDE.md initialization & 7-agent research team   | ✅ Complete |
@@ -48,8 +49,9 @@
 
 | Date       | Model    | Description                                                          |
 |------------|----------|----------------------------------------------------------------------|
+| 2026-05-09 | Opus-4.7 | 10-skill battery, multi-user `.personal/<email>/` paradigm, `_` prefix convention, agent renames |
 | 2026-05-09 | Opus-4.7 | VS Code theming pass — explorer git decoration colors, markdown preview CSS, Apc workbench font, terminal 17px, remote → bible-study |
-| 2026-05-09 | Opus-4.7 | 6 teacher-voice agents + `deep-bible-study-devotional` skill registered under `.claude/` |
+| 2026-05-09 | Opus-4.7 | 6 teacher-voice agents + `_deep-bible-study-devotional` skill registered under `.claude/` |
 | 2026-05-09 | Opus-4.7 | CLAUDE.md initialization + 7 research agents under `.claude/agents/` |
 | 2026-05-09 | Opus-4.7 | VS Code terminal theming (#171717 / pure green / Cascadia 600), Node.js LTS install, GSD v1.41.1 global install |
 
@@ -61,6 +63,7 @@
 
 | Date       | Topic                                              | Files |
 |------------|----------------------------------------------------|-------|
+| 2026-05-09 | Skills battery, multi-user paradigm, naming conventions | 9     |
 | 2026-05-09 | VS Code theming, markdown CSS, Apc font, remote    | 24    |
 | 2026-05-09 | Teacher-voice agents + deep-bible-study skill      | 2     |
 | 2026-05-09 | CLAUDE.md initialization & 7-agent research team   | 6     |
@@ -80,14 +83,26 @@
 
 | Metric                | Value              |
 |-----------------------|--------------------|
-| Total sessions        | 8                  |
+| Total sessions        | 9                  |
 | Models used           | Opus-4.5, Opus-4.7 |
-| Files created (total) | ~83                |
+| Files created (total) | ~91                |
 | Most active month     | January 2026       |
 
 ---
 
 ## Complete File Listing
+
+### 2026-05-09-05-skills-battery-and-conventions/
+
+- [Opus-4.7--00.md](./2026-05-09-05-skills-battery-and-conventions/Opus-4.7--00.md) — Main documentation
+- [Opus-4.7--01.md](./2026-05-09-05-skills-battery-and-conventions/Opus-4.7--01.md) — Exchange 1: Post-02 cleanup
+- [Opus-4.7--02.md](./2026-05-09-05-skills-battery-and-conventions/Opus-4.7--02.md) — Exchange 2: Teacher rename round 1 (wrong direction)
+- [Opus-4.7--03.md](./2026-05-09-05-skills-battery-and-conventions/Opus-4.7--03.md) — Exchange 3: Scoping clarification
+- [Opus-4.7--04.md](./2026-05-09-05-skills-battery-and-conventions/Opus-4.7--04.md) — Exchange 4: Full rename saga
+- [Opus-4.7--05.md](./2026-05-09-05-skills-battery-and-conventions/Opus-4.7--05.md) — Exchange 5: Skills vs commands
+- [Opus-4.7--06.md](./2026-05-09-05-skills-battery-and-conventions/Opus-4.7--06.md) — Exchange 6: Skills battery + multi-user paradigm
+- [Opus-4.7--07.md](./2026-05-09-05-skills-battery-and-conventions/Opus-4.7--07.md) — Exchange 7: Underscore prefix convention + docs + memory
+- [Opus-4.7--08.md](./2026-05-09-05-skills-battery-and-conventions/Opus-4.7--08.md) — Exchange 8: Full-protocol session logging
 
 ### 2026-05-09-04-vscode-theming-and-remote/
 
