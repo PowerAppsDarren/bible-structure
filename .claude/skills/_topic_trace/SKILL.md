@@ -1,11 +1,11 @@
 ---
-name: _topic-trace
+name: _topic_trace
 description: Trace a biblical theme, doctrine, or concept across the canon — covenant, kingdom of God, prayer, fear of the Lord, atonement, election, the day of the Lord, faith, suffering. Use when the user asks "trace [theme] through Scripture", "do a topical study on prayer / covenant / kingdom / faith", "what does the Bible teach about X", "where does [theme] start and how does it develop", "all references to [doctrine]", or wants the redemptive-historical sweep of a single concept. Produces a thematic study with canonical trajectory (creation → fall → covenants → Christ → consummation), key passages anchored at each stage, and theological significance — saveable to the shared `topics/` folder or a personal notes folder.
 ---
 
 # Topic Trace
 
-Trace a biblical theme, doctrine, or concept redemptive-historically through the canon. Distinct from a single-passage exegesis (use **_deep-bible-study-devotional** or the `exegete` agent for that) and from a systematic-theology entry (use the `theologian` agent for that).
+Trace a biblical theme, doctrine, or concept redemptive-historically through the canon. Distinct from a single-passage exegesis (use **_deep_bible_study_devotional** or the `exegete` agent for that) and from a systematic-theology entry (use the `theologian` agent for that).
 
 ## Triggers
 
@@ -72,7 +72,7 @@ Filename convention: kebab-case for the folder, with `README.md` for the main en
 ## Composition
 
 - Orchestrates **theologian** (primary), **cross-references**, and **linguist** (when applicable).
-- Different from **_cross-reference-map** (passage-level) and from **_deep-bible-study-devotional** (chapter-level).
+- Different from **_cross_reference_map** (passage-level) and from **_deep_bible_study_devotional** (chapter-level).
 - Feeds back into chapter-level work — many of the cross-references in a chapter README's Cross References section are themes that ultimately deserve their own topic page.
 
 ## Avoid

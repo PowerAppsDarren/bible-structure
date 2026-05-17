@@ -75,8 +75,9 @@ Two tiers of subagents are committed under `.claude/agents/` and load automatica
 - `teacher-jonathan-cahn` — Hebrew word studies, prophetic parallels, Shemitah
 - `teacher-john-bevere` — fear of the Lord, Day of the Lord, wrath vs tribulation
 - `teacher-bill-creasy` — Bible as unified literary work, genre, geography
+- `teacher-oswald-chambers` — abandonment to Jesus, Cross-centered devotion, sanctification as union with Christ
 
-The teacher-voice agents pair with the `_deep-bible-study-devotional` skill in `.claude/skills/`, which provides the devotional output structure.
+The teacher-voice agents pair with the `_deep_bible_study_devotional` skill in `.claude/skills/`, which provides the devotional output structure.
 
 See `.claude/agents/README.md` for how the agents divide labor and `.claude/agents/TEACHERS.md` for teacher-pairing suggestions. Each agent is told to read this CLAUDE.md before producing output, so updates here propagate.
 
@@ -84,24 +85,31 @@ See `.claude/agents/README.md` for how the agents divide labor and `.claude/agen
 
 A coordinated battery of skills under `.claude/skills/` covers the four phases of small-group Bible study. Skills are **model-invoked** (Claude decides when to fire based on the user's message); user-typed shortcuts go in `.claude/commands/` (not yet present).
 
-- **Heavyweight chapter walk:** `_deep-bible-study-devotional`
-- **Research:** `_word-study`, `_cross-reference-map`, `_character-study`, `_place-study`, `_topic-trace`
-- **Group:** `_group-discussion-prep`, `_compare-notes` (multi-user — reads across `.personal/*/`)
-- **Personal:** `_personal-reflection`, `_prayer-from-passage` (write to `.personal/<email>/` only)
-- **Maintenance:** `_chapter-readme-fill` (writes to shared `scripture/`)
+- **Heavyweight chapter walk:** `_deep_bible_study_devotional`
+- **Research:** `_word_study`, `_cross_reference_map`, `_character_study`, `_place_study`, `_topic_trace`
+- **Group:** `_group_discussion_prep`, `_compare_notes` (multi-user — reads across `.personal/*/`)
+- **Personal:** `_personal_reflection`, `_prayer_from_passage` (write to `.personal/<email>/` only)
+- **Maintenance:** `_chapter_readme_fill` (writes to shared `scripture/`)
 
 See `.claude/skills/README.md` for how skills compose with each other and with the agents. Skills enforce the two-layer discipline: shared output goes to top-level folders; personal output stays inside the user's email folder.
 
-### Naming convention — underscore prefix on custom skills and commands
+### Naming convention — `_snake_case` for custom skills and commands, `kebab-case` for agents
 
-All custom skills and slash commands we create together for this repo are prefixed with `_` (e.g., `_word-study`, `_chapter-readme-fill`). This visually distinguishes them from third-party skill bundles (GSD and similar) at a glance — anything starting with `_` in `.claude/skills/` or `.claude/commands/` is something built specifically for this repo.
+Two conventions, applied strictly:
+
+- **Custom skills and slash commands:** `_snake_case` — underscore prefix, then snake_case (e.g., `_word_study`, `_chapter_readme_fill`, `_new_teacher_agent`). The underscore distinguishes our work from third-party skill bundles (GSD and similar); the snake_case differentiates skill identifiers from agent identifiers at a glance.
+- **Agents:** `kebab-case`, no prefix (e.g., `exegete`, `theologian`, `teacher-perry-stone`, `teacher-oswald-chambers`).
 
 When adding a new skill or command:
-- Prefix the folder/file name with `_` (`.claude/skills/_<name>/SKILL.md`, `.claude/commands/_<name>.md`).
-- Set `name: _<name>` in the YAML frontmatter so it matches.
+- Folder/file name: `.claude/skills/_<snake_case_name>/SKILL.md` or `.claude/commands/_<snake_case_name>.md`.
+- `name:` frontmatter field must match exactly (`name: _<snake_case_name>`).
+- No hyphens anywhere in custom skill names — convert each hyphen to an underscore.
 - Update references in this `CLAUDE.md`, `.claude/skills/README.md`, and any cross-references between skills.
 
-**Agents do NOT get the prefix** — the convention is skills/commands only. Agent files stay as `exegete.md`, `theologian.md`, `teacher-perry-stone.md`, etc.
+When adding a new agent:
+- Folder/file name: `.claude/agents/<kebab-case-name>.md`.
+- `name:` frontmatter field must match (`name: <kebab-case-name>`).
+- No underscore prefix on agents — the prefix is reserved for skills/commands.
 
 ## AI-Chats protocol
 

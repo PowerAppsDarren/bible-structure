@@ -150,13 +150,44 @@ The user references these teachers as her primary trusted voices. Cite them natu
 
 ---
 
+## Oswald Chambers (1874–1917)
+
+**Background:** Scottish Baptist preacher, principal of the Bible Training College in Clapham, London (1911–1915), and YMCA chaplain to British Commonwealth troops at Zeitoun Camp, Egypt during WWI. Trained at the Royal Academy of Art in Edinburgh and at Dunoon College. Died of complications from a ruptured appendix in Cairo on November 15, 1917, at age 43. Never published a book in his lifetime — every work bearing his name was compiled by his wife Gertrude "Biddy" Chambers from her verbatim shorthand notes of his lectures. *My Utmost for His Highest* (1927) has remained continuously in print and become one of the most widely read devotional works in English.
+
+**Tradition:** Holiness / Keswick "higher life" influence, but more rigorous and Cross-centered than typical Keswick teaching.
+
+**His emphases:**
+- Abandonment to Jesus Christ — not to a cause, a calling, or a creed, but to a Person
+- The Cross as the interpretive center — every passage read in the light of Calvary
+- Sanctification as union with Christ (Galatians 2:20) — not an experience but a life
+- Obedience over feelings — feelings follow; obedience leads
+- The disciplined inner life — the unseen prayer, the hidden discipline, the daily death
+- "My utmost for His highest" — the disciple's total, glad surrender to the highest claim God has on a life
+- The natural vs. the spiritual — the good laid on the altar so that the better may rise
+- "Broken bread and poured-out wine" — the disciple's life poured out without keeping a record
+- The relentless call of God — Chambers never lets the reader settle
+- Suffering as part of discipleship — the disciple is not promised comfort but conformity to Christ
+
+**How to cite him:**
+- "Oswald Chambers wrote in *My Utmost for His Highest* that..." (only when verifiable)
+- "Chambers' framework presses us to ask..."
+- "From Chambers' lens, this passage calls us to..."
+- "Chambers consistently emphasized that abandonment to Jesus is not abandonment to a cause..."
+- "Chambers' question to every passage is: *where is the call to surrender?*"
+
+**When he fits:** Gospel call passages (Matt 16, Luke 9, John 6), Romans 6–8, Galatians 2:20, Philippians 3:7–14, the Sermon on the Mount, Psalms of trust and surrender, and any text where the question pressing on the reader is *will you abandon yourself to Jesus?* Especially valuable when the passage calls for interior consecration rather than exterior moral behavior — and when the chapter walk would otherwise tilt toward information without transformation.
+
+**Note:** Do not reduce Chambers to "let go and let God" — he was far more rigorous than that slogan suggests. Quotes from *My Utmost for His Highest* are dated by entry (January 1 through December 31); cite an entry only when you are certain of it.
+
+---
+
 ## Citation rules
 
 1. **Don't invent quotes.** If you don't have specific knowledge of what a teacher said, frame the citation as a general orientation: "Perry Stone has long emphasized..." rather than fabricating a specific quote.
 
 2. **Don't overuse.** 2-4 teacher mentions per devotional is plenty. More than that and the text starts to feel like a name-drop reel.
 
-3. **Match the teacher to the moment.** Hebrew word studies → Stone or Cahn. Cross-canonical patterns → Missler. Verse-by-verse exposition and pre-trib eschatology → Barnett. Day of the Lord and fear of the Lord → Bevere. Literary structure, genre, narrative arc, geography → Creasy.
+3. **Match the teacher to the moment.** Hebrew word studies → Stone or Cahn. Cross-canonical patterns → Missler. Verse-by-verse exposition and pre-trib eschatology → Barnett. Day of the Lord and fear of the Lord → Bevere. Literary structure, genre, narrative arc, geography → Creasy. Abandonment to Christ, Cross-centered devotion, the disciplined inner life → Chambers.
 
 4. **Stay anchored to Scripture.** The teachers are voices that confirm or illuminate the text. The text itself is the authority. Always cite the text first, then the teacher, then return to the text.
 

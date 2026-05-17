@@ -1,5 +1,5 @@
 ---
-name: _group-discussion-prep
+name: _group_discussion_prep
 description: Generate small-group or Sunday-school discussion materials for a Bible chapter or passage — discussion questions, ice-breakers, key verses for memorization, and a leader's outline. Use when the user is preparing to lead a small group, says "discussion questions for [chapter]", "small group on [book chapter]", "Sunday school lesson on X", "questions for our Bible study", "prepare a discussion on [passage]", or asks for materials structured for group conversation rather than personal study. Produces a leader's prep packet with opening question, observation/interpretation/application questions, and a wrap-up — saveable as personal notes for the leader, or to a shared `teaching/` folder if the church wants a shared library.
 ---
 
@@ -76,8 +76,8 @@ Most leader prep is personal. Only push to shared if the user explicitly wants a
 ## Composition
 
 - Orchestrates **exegete** (interpretive grounding) and **theologian** (doctrinal stakes).
-- Pairs with **_deep-bible-study-devotional** if the leader wants the full chapter walk first, then the discussion packet.
-- Pairs with **_chapter-readme-fill** if the shared chapter README's Questions section needs better questions — the discussion packet's Application questions can seed that.
+- Pairs with **_deep_bible_study_devotional** if the leader wants the full chapter walk first, then the discussion packet.
+- Pairs with **_chapter_readme_fill** if the shared chapter README's Questions section needs better questions — the discussion packet's Application questions can seed that.
 
 ## Avoid
 

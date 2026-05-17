@@ -2,6 +2,11 @@
 # Each user has a folder named by their email address under .personal/
 # (e.g., .personal/darren@neese.us/). Members share notes via git push/pull;
 # privacy is by convention. See .personal/README.md and CLAUDE.md.
+#
+# Exception: each user can opt content out of sharing by putting it in
+# their own `private/` subfolder, which IS gitignored. Pattern is per-user
+# (not wildcarded) so users opt in explicitly.
+.personal/darren@neese.us/private/
 
 .ai-chats/.lookie/
 darren.md

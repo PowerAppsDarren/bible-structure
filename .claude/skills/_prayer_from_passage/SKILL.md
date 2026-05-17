@@ -1,5 +1,5 @@
 ---
-name: _prayer-from-passage
+name: _prayer_from_passage
 description: Turn a Bible passage, chapter, or theme into structured prayer — adoration, confession, thanksgiving, supplication — anchored to the text rather than free-floating. Use when the user says "pray through [chapter]", "prayer based on [passage]", "help me pray Psalm 51", "turn this chapter into a prayer", "give me a prayer from today's reading", or wants to use Scripture as a template for prayer. Output is personal devotional — saves to the user's `.personal/<email>/` folder, not the shared layer.
 ---
 
@@ -66,8 +66,8 @@ When the passage's own structure suggests a form, prefer it over generic ACTS.
 ## Composition
 
 - Lightly orchestrates the **exegete** agent for textual grounding.
-- Pairs with **_personal-reflection** when the user wants both reflection and prayer in one journal entry.
-- Pairs with **_deep-bible-study-devotional** when the user wants the prayer as the closing section of a fuller chapter walk.
+- Pairs with **_personal_reflection** when the user wants both reflection and prayer in one journal entry.
+- Pairs with **_deep_bible_study_devotional** when the user wants the prayer as the closing section of a fuller chapter walk.
 
 ## Avoid
 

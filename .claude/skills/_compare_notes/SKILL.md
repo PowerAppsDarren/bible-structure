@@ -1,5 +1,5 @@
 ---
-name: _compare-notes
+name: _compare_notes
 description: Compare personal Bible-study notes across multiple users in a small-group or church repo. Use when the user asks "what did [name] think about [chapter]", "compare my notes with [other user]'s on [passage]", "what did the group take away from [chapter]", "weekly review of what we've been studying", "summarize everyone's notes on Genesis 1", or wants to surface what other members of the group have written in their `.personal/<email>/` folders. The skill enumerates `.personal/*/` (each user's email-named folder), reads notes by passage/topic, and produces a synthesis — points of agreement, divergence, unique insights, and unanswered questions across the group.
 ---
 
@@ -70,8 +70,8 @@ Read `CLAUDE.md` first. The repo's multi-user paradigm:
 ## Composition
 
 - No agent dependency — this is a repo-reading skill, not a research skill.
-- Pairs with **_group-discussion-prep** when a leader wants to surface group take-aways before the next meeting.
-- Pairs with **_topic-trace** when group divergence on a theme suggests the theme deserves a shared topic page.
+- Pairs with **_group_discussion_prep** when a leader wants to surface group take-aways before the next meeting.
+- Pairs with **_topic_trace** when group divergence on a theme suggests the theme deserves a shared topic page.
 
 ## Avoid
 

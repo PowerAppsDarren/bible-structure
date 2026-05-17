@@ -1,5 +1,5 @@
 ---
-name: _place-study
+name: _place_study
 description: Produce a structured geographical study of a biblical place — a city (Jerusalem, Babylon, Corinth), region (Galilee, Judea, Asia Minor), landmark (Temple, Tabernacle, Mount Sinai), or route (Exodus, Paul's missionary journeys, the via Maris). Use when the user asks "where is [place]", "study Jerusalem", "what was Caesarea Philippi", "trace the Exodus route", "geography of Paul's second journey", "study the Sea of Galilee", or names any biblical place / region / route. Produces a structured study with location, geography, biblical role, archaeology, and modern status — saveable to the shared `places/` folder or a personal notes folder.
 ---
 
@@ -79,8 +79,8 @@ Filename convention: human-readable place name as written — `Jerusalem.md`, `S
 ## Composition
 
 - Orchestrates the **geographer** agent (and **historian** for period-specific context).
-- Pairs with **_character-study** for figures defined by location (Jonah → Nineveh; Jesus' Galilee ministry).
-- Pairs with **_chapter-readme-fill** when geography illuminates a chapter passage.
+- Pairs with **_character_study** for figures defined by location (Jonah → Nineveh; Jesus' Galilee ministry).
+- Pairs with **_chapter_readme_fill** when geography illuminates a chapter passage.
 
 ## Avoid
 

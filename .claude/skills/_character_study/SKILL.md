@@ -1,5 +1,5 @@
 ---
-name: _character-study
+name: _character_study
 description: Produce a structured biographical study of a biblical figure (Abraham, David, Esther, Paul, Peter, Mary), a church history figure (Augustine, Luther, Calvin, Spurgeon), or a modern biblical scholar (N.T. Wright, D.A. Carson, Bauckham). Use when the user asks "study Abraham", "tell me about David's life", "give me a character study on Paul", "what was Augustine's contribution", "who was Caiaphas", "deep dive on Esther", or names any biblical, church-historical, or contemporary figure and asks about their life, contributions, or theological significance. Produces a chronologically-organized biography with theological significance, key passages, and cross-references — saveable to the shared `people/` folder or a personal notes folder.
 ---
 
@@ -12,7 +12,7 @@ Produce a biographical study with chronological structure, theological significa
 - "Study [biblical figure]" / "Character study on Abraham / David / Paul / Esther"
 - "Tell me about [biblical or church-history figure]'s life"
 - "Who was [name]?"
-- "[Modern scholar]'s position on X" *(may also trigger _topic-trace or theological lookup)*
+- "[Modern scholar]'s position on X" *(may also trigger _topic_trace or theological lookup)*
 - "Trace the life of [figure]"
 
 ## Repo context
@@ -59,9 +59,9 @@ Filename convention: full common name as written (`Abraham.md`, `Paul.md`, `Augu
 ## Composition
 
 - Orchestrates the **biographer** agent (and **historian** for context).
-- Pairs with **_topic-trace** when a biblical figure embodies a theme (Abraham ↔ faith and covenant; Moses ↔ deliverance and law; David ↔ messianic kingship).
-- Pairs with **_place-study** for figures defined by location (Jonah → Nineveh; Paul → Asia Minor / Mediterranean).
-- Pairs with **_cross-reference-map** for figures heavily echoed elsewhere (Adam in Romans 5 / 1 Cor 15; Melchizedek in Hebrews 7).
+- Pairs with **_topic_trace** when a biblical figure embodies a theme (Abraham ↔ faith and covenant; Moses ↔ deliverance and law; David ↔ messianic kingship).
+- Pairs with **_place_study** for figures defined by location (Jonah → Nineveh; Paul → Asia Minor / Mediterranean).
+- Pairs with **_cross_reference_map** for figures heavily echoed elsewhere (Adam in Romans 5 / 1 Cor 15; Melchizedek in Hebrews 7).
 
 ## Avoid
 

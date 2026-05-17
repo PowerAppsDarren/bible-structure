@@ -1,8 +1,8 @@
 # AI-Chats Master Index
 
-**Last Updated:** 2026-05-09
-**Total Sessions:** 10
-**Total Files:** 61 (session logs) + raw/ history
+**Last Updated:** 2026-05-17
+**Total Sessions:** 13
+**Total Files:** 79 (session logs) + raw/ history
 
 ## 📋 Quick Navigation
 
@@ -17,6 +17,9 @@
 
 | Date       | Session | Model    | Topic                                              | Status      |
 |------------|---------|----------|----------------------------------------------------|-------------|
+| 2026-05-17 | 03      | Opus-4.7 | Sunday sermon — Jonah 3–4 → Lam 3 → John 10        | ✅ Complete |
+| 2026-05-17 | 02      | Opus-4.7 | Oswald Chambers teacher agent + snake_case skills  | ✅ Complete |
+| 2026-05-17 | 01      | Opus-4.7 | GSD update 1.42.2 → 1.42.3                         | ✅ Complete |
 | 2026-05-09 | 06      | Opus-4.7 | MemPalace install + hooks + MCP + README           | ✅ Complete |
 | 2026-05-09 | 05      | Opus-4.7 | Skills battery, multi-user paradigm, naming conventions | ✅ Complete |
 | 2026-05-09 | 04      | Opus-4.7 | VS Code theming, markdown CSS, Apc font, remote    | ✅ Complete |
@@ -31,6 +34,12 @@
 ---
 
 ## Sessions by Topic
+
+### 📖 Bible Study Sessions
+
+| Date       | Model    | Description                                                          |
+|------------|----------|----------------------------------------------------------------------|
+| 2026-05-17 | Opus-4.7 | Live sermon walk — Jonah 3:1–4:4 (revival prophet didn't want), Lamentations 3:1–18 (the bottom of the Bible), John 10:7–17 (the Gate / abundant life), 3 reflection-question prompts (roped together, too small, too stubborn / Acts 9) |
 
 ### 🏗️ Template Architecture
 
@@ -50,6 +59,8 @@
 
 | Date       | Model    | Description                                                          |
 |------------|----------|----------------------------------------------------------------------|
+| 2026-05-17 | Opus-4.7 | 7th teacher agent (Oswald Chambers) + `_new_teacher_agent` meta-skill; rename of all 12 custom skills from `_kebab-case` → `_snake_case`; convention docs rewritten |
+| 2026-05-17 | Opus-4.7 | `/gsd-update` patch bump 1.42.2 → 1.42.3 (global Claude install); stale `gsd-sdk` shim flagged |
 | 2026-05-09 | Opus-4.7 | MemPalace 3.3.4 installed via uv; SessionStart/Stop/PreCompact hooks; `.mcp.json` server; README "Memory & Retrieval" section; absolute-path fix for Git Bash hooks |
 | 2026-05-09 | Opus-4.7 | 10-skill battery, multi-user `.personal/<email>/` paradigm, `_` prefix convention, agent renames |
 | 2026-05-09 | Opus-4.7 | VS Code theming pass — explorer git decoration colors, markdown preview CSS, Apc workbench font, terminal 17px, remote → bible-study |
@@ -65,6 +76,9 @@
 
 | Date       | Topic                                              | Files |
 |------------|----------------------------------------------------|-------|
+| 2026-05-17 | Sunday sermon — Jonah 3–4 → Lam 3 → John 10        | 10    |
+| 2026-05-17 | Oswald Chambers teacher agent + snake_case skills  | 6     |
+| 2026-05-17 | GSD update 1.42.2 → 1.42.3                         | 2     |
 | 2026-05-09 | MemPalace install + hooks + MCP + README           | 6     |
 | 2026-05-09 | Skills battery, multi-user paradigm, naming conventions | 9     |
 | 2026-05-09 | VS Code theming, markdown CSS, Apc font, remote    | 24    |
@@ -86,14 +100,41 @@
 
 | Metric                | Value              |
 |-----------------------|--------------------|
-| Total sessions        | 10                 |
+| Total sessions        | 13                 |
 | Models used           | Opus-4.5, Opus-4.7 |
-| Files created (total) | ~97                |
-| Most active month     | January 2026       |
+| Files created (total) | ~115               |
+| Most active month     | May 2026           |
 
 ---
 
 ## Complete File Listing
+
+### 2026-05-17-03-jonah-john10-sermon-study/
+
+- [Opus-4.7--00.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--00.md) — Main documentation
+- [Opus-4.7--01.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--01.md) — Exchange 1: Jonah 3:1–4:4 devotional (church sermon)
+- [Opus-4.7--02.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--02.md) — Exchange 2: Set CLAUDE_CODE_USE_POWERSHELL_TOOL=1 (global env var)
+- [Opus-4.7--03.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--03.md) — Exchange 3: 5 questions on "what are you tied to?" (early Christians roped together)
+- [Opus-4.7--04.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--04.md) — Exchange 4: "What problems have you written off as too small for God?"
+- [Opus-4.7--05.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--05.md) — Exchange 5: "What problems do you deem too stubborn for God?" — Acts 9
+- [Opus-4.7--06.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--06.md) — Exchange 6: Lamentations 3:1–18 devotional ("the man that hath seen affliction")
+- [Opus-4.7--07.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--07.md) — Exchange 7: Live sermon scribbles synthesis — "all day long" + John 10:7 gate (ultrathink)
+- [Opus-4.7--08.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--08.md) — Exchange 8: John 10:7–17 devotional ("life and have it more abundantly")
+- [Opus-4.7--09.md](./2026-05-17-03-jonah-john10-sermon-study/Opus-4.7--09.md) — Exchange 9: Wrap up per AI-Chats Protocol v3.2
+
+### 2026-05-17-02-oswald-chambers-and-snake-case/
+
+- [Opus-4.7--00.md](./2026-05-17-02-oswald-chambers-and-snake-case/Opus-4.7--00.md) — Main documentation
+- [Opus-4.7--01.md](./2026-05-17-02-oswald-chambers-and-snake-case/Opus-4.7--01.md) — Exchange 1: Create Oswald Chambers agent (and check if a scaffolding skill exists)
+- [Opus-4.7--02.md](./2026-05-17-02-oswald-chambers-and-snake-case/Opus-4.7--02.md) — Exchange 2: Build Chambers agent + project-only meta-skill
+- [Opus-4.7--03.md](./2026-05-17-02-oswald-chambers-and-snake-case/Opus-4.7--03.md) — Exchange 3: Snake_case rename + update the meta-skill
+- [Opus-4.7--04.md](./2026-05-17-02-oswald-chambers-and-snake-case/Opus-4.7--04.md) — Exchange 4: Confirm Oswald is fully registered as a teacher
+- [Opus-4.7--05.md](./2026-05-17-02-oswald-chambers-and-snake-case/Opus-4.7--05.md) — Exchange 5: Wrap up per AI-Chats Protocol v3.2
+
+### 2026-05-17-01-gsd-update/
+
+- [Opus-4.7--00.md](./2026-05-17-01-gsd-update/Opus-4.7--00.md) — Main documentation
+- [Opus-4.7--01.md](./2026-05-17-01-gsd-update/Opus-4.7--01.md) — Exchange 1: `update gsd` (1.42.2 → 1.42.3)
 
 ### 2026-05-09-06-mempalace-memory-setup/
 

@@ -1,11 +1,11 @@
 ---
-name: _word-study
+name: _word_study
 description: Produce a focused Hebrew, Aramaic, or Greek word study with academic discipline. Use ANY time the user asks about the original-language meaning of a word — "what does *hesed* mean", "study the Greek word for love in 1 Corinthians 13", "what's the Hebrew word behind 'wait' in Isaiah 40", "do a word study on agape / pistis / torah / shalom / kaphar", or names any Hebrew, Aramaic, or Greek term and asks for depth. Also triggers when a passage discussion surfaces "what's the original word for [English term] here". Produces a structured single-lemma study with lemma, transliteration, Strong's, semantic range, key occurrences, and theological significance — saveable to the shared `words/` folder or a personal notes folder.
 ---
 
 # Word Study
 
-Produce a single-lemma word study with academic rigor (BDB / HALOT for Hebrew & Aramaic, BDAG / Louw-Nida for Greek) and disciplined avoidance of common _word-study fallacies.
+Produce a single-lemma word study with academic rigor (BDB / HALOT for Hebrew & Aramaic, BDAG / Louw-Nida for Greek) and disciplined avoidance of common _word_study fallacies.
 
 ## Triggers
 
@@ -60,9 +60,9 @@ Filename convention: lowercase transliteration, no diacritics — `hesed.md`, `a
 ## Composition with other skills and agents
 
 - Orchestrates the **linguist** agent.
-- Pairs with **_chapter-readme-fill** when the word anchors a chapter passage.
-- Pairs with **_topic-trace** when one word carries a theme (e.g., *hesed* → covenant loyalty across the canon).
-- Distinct from **_deep-bible-study-devotional**, which does its own embedded word work as part of a full chapter study.
+- Pairs with **_chapter_readme_fill** when the word anchors a chapter passage.
+- Pairs with **_topic_trace** when one word carries a theme (e.g., *hesed* → covenant loyalty across the canon).
+- Distinct from **_deep_bible_study_devotional**, which does its own embedded word work as part of a full chapter study.
 
 ## Avoid
 

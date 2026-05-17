@@ -1,13 +1,13 @@
 ---
-name: _chapter-readme-fill
-description: Fill in a stub chapter README in `scripture/<NN-Book>/<Book>-<NN>/README.md` with shared-quality reference content following the README-TEMPLATE.md structure (Key Verses, Summary, Notes, Cross References, Questions). Use when the user says "fill in the chapter README for Genesis 1", "complete the stub for Romans 8", "populate the Genesis-03 README", "build out the chapter notes for [book chapter]", or wants the existing `# Read Me` placeholder turned into real reference content. Output is shared, factual, reference-quality — no denominational positioning, no extended copyrighted-translation quotes, no personal reflection. This is the repo-maintenance counterpart to _deep-bible-study-devotional (which produces personal devotional content).
+name: _chapter_readme_fill
+description: Fill in a stub chapter README in `scripture/<NN-Book>/<Book>-<NN>/README.md` with shared-quality reference content following the README-TEMPLATE.md structure (Key Verses, Summary, Notes, Cross References, Questions). Use when the user says "fill in the chapter README for Genesis 1", "complete the stub for Romans 8", "populate the Genesis-03 README", "build out the chapter notes for [book chapter]", or wants the existing `# Read Me` placeholder turned into real reference content. Output is shared, factual, reference-quality — no denominational positioning, no extended copyrighted-translation quotes, no personal reflection. This is the repo-maintenance counterpart to _deep_bible_study_devotional (which produces personal devotional content).
 ---
 
 # Chapter README Fill
 
 Convert a stub `# Read Me` chapter README into shared, reference-quality content following `README-TEMPLATE.md`.
 
-This is the **shared-layer** counterpart to `_personal-reflection` (which writes to `.personal/<email>/`) and to `_deep-bible-study-devotional` (which produces a personal devotional). The output here is the kind of note that belongs in the margins of a study Bible everyone in the group consults.
+This is the **shared-layer** counterpart to `_personal_reflection` (which writes to `.personal/<email>/`) and to `_deep_bible_study_devotional` (which produces a personal devotional). The output here is the kind of note that belongs in the margins of a study Bible everyone in the group consults.
 
 ## Triggers
 
@@ -30,7 +30,7 @@ The template structure is in `/README-TEMPLATE.md` at the repo root: heading `# 
 
 1. **Verify the target.** Confirm the passage exists and the existing file is a stub (`# Read Me` placeholder) and not someone's in-progress work.
 2. **Delegate the close reading to the `exegete` agent** — single-passage exposition, literary structure, key verses, summary, notes.
-3. **Delegate the cross-reference selection to the `cross-references` agent** — choose 4–10 of the most theologically significant cross-refs (not exhaustive; that's the **_cross-reference-map** skill's job).
+3. **Delegate the cross-reference selection to the `cross-references` agent** — choose 4–10 of the most theologically significant cross-refs (not exhaustive; that's the **_cross_reference_map** skill's job).
 4. **Pull `historian` or `geographer`** if the chapter's interpretation hinges on background.
 5. **Assemble** in the template structure.
 6. **Save** to the chapter README path.
@@ -74,9 +74,9 @@ The template structure is in `/README-TEMPLATE.md` at the repo root: heading `# 
 ## Composition
 
 - Orchestrates **exegete** (primary), **cross-references**, and (when needed) **historian / geographer / linguist**.
-- Counterpart to **_personal-reflection** (same chapter, opposite layer).
-- Counterpart to **_deep-bible-study-devotional** (same chapter, devotional rather than reference).
-- Feeds **_group-discussion-prep**'s leader notes.
+- Counterpart to **_personal_reflection** (same chapter, opposite layer).
+- Counterpart to **_deep_bible_study_devotional** (same chapter, devotional rather than reference).
+- Feeds **_group_discussion_prep**'s leader notes.
 
 ## Avoid
 

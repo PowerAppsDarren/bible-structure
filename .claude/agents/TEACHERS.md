@@ -1,8 +1,8 @@
-# Bible Teacher Agents — Six Voices for Deep Study
+# Bible Teacher Agents — Seven Voices for Deep Study
 
-A collection of six Claude Code subagents, each modeled after a distinct Bible teacher's methodology and emphases. Drop these into your `.claude/agents/` directory and invoke them by name when you want a chapter taught through a specific lens.
+A collection of seven Claude Code subagents, each modeled after a distinct Bible teacher's methodology and emphases. Drop these into your `.claude/agents/` directory and invoke them by name when you want a chapter taught through a specific lens.
 
-## The six agents
+## The seven agents
 
 | File | Agent name | Lens | Best for |
 |---|---|---|---|
@@ -12,6 +12,7 @@ A collection of six Claude Code subagents, each modeled after a distinct Bible t
 | `teacher-jonathan-cahn.md` | `teacher-jonathan-cahn` | Hebrew word studies, ancient-to-modern prophetic parallels, Shemitah/Jubilee cycles | Prophetic books, national judgment passages, current-events resonance |
 | `teacher-john-bevere.md` | `teacher-john-bevere` | Fear of the Lord, Day of the Lord, tribulation vs wrath, cost of discipleship | 1-2 Thessalonians, 2 Peter, Olivet Discourse, eschatology with hope |
 | `teacher-bill-creasy.md` | `teacher-bill-creasy` | Bible as unified literary work, genre awareness, geography, narrative arc | Historical narratives, wisdom literature, anything in Israel's geography |
+| `teacher-oswald-chambers.md` | `teacher-oswald-chambers` | Abandonment to Jesus, Cross-centered devotion, sanctification as union with Christ, obedience over feelings | Gospel call passages, Romans 6–8, Galatians, Philippians 3, devotional / interior texts |
 
 ## Installation
 
@@ -53,7 +54,7 @@ You can also chain them: have one agent do the verse-by-verse pass, then a secon
 
 ## Companion skill
 
-These agents pair with the `_deep-bible-study-devotional` skill, which orchestrates the full devotional output structure. The agents are the voices; the skill is the format.
+These agents pair with the `_deep_bible_study_devotional` skill, which orchestrates the full devotional output structure. The agents are the voices; the skill is the format.
 
 ## File format
 

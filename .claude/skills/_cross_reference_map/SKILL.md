@@ -1,6 +1,6 @@
 ---
-name: _cross-reference-map
-description: Build a structured cross-reference web for a passage — direct quotations, allusions, parallel passages, and typology — with citations, strength assessments, and source-language notes (LXX vs. MT). Use when the user asks "what passages connect to X", "trace this thread through Scripture", "where else is this quoted", "what's the OT background for [NT chapter]", "show me parallel passages to [verse]", "all uses of OT in Hebrews 1", or wants a deeper cross-reference set than what fits in a chapter README's small Cross References section. Distinct from _chapter-readme-fill, which produces 4–10 cross-refs inside a chapter README; this skill produces standalone cross-reference documents.
+name: _cross_reference_map
+description: Build a structured cross-reference web for a passage — direct quotations, allusions, parallel passages, and typology — with citations, strength assessments, and source-language notes (LXX vs. MT). Use when the user asks "what passages connect to X", "trace this thread through Scripture", "where else is this quoted", "what's the OT background for [NT chapter]", "show me parallel passages to [verse]", "all uses of OT in Hebrews 1", or wants a deeper cross-reference set than what fits in a chapter README's small Cross References section. Distinct from _chapter_readme_fill, which produces 4–10 cross-refs inside a chapter README; this skill produces standalone cross-reference documents.
 ---
 
 # Cross-Reference Map
@@ -14,7 +14,7 @@ Build a structured, deeper cross-reference web for a passage — beyond what fit
 - "Where else is Genesis 15:6 quoted?"
 - "All NT uses of Isaiah 53"
 - "Parallel passages for [Synoptic pericope / Kings/Chronicles / Psalm doublet]"
-- "Trace [theme] through Scripture" *(may also trigger _topic-trace)*
+- "Trace [theme] through Scripture" *(may also trigger _topic_trace)*
 
 ## Repo context
 
@@ -23,7 +23,7 @@ Read `CLAUDE.md` first. Output destinations:
 - **Shared:** `commentary/<book>-<chapter>/cross-references.md` (or under `topics/<theme>/`) — factual, with sources cited.
 - **Personal:** `.personal/<user-email>/cross-references/<passage>.md` — your private map, may include speculative connections you're still working through.
 
-For chapter-level Cross References inside a chapter's own README (just 4–10 entries), use **_chapter-readme-fill** instead.
+For chapter-level Cross References inside a chapter's own README (just 4–10 entries), use **_chapter_readme_fill** instead.
 
 ## Methodology
 
@@ -67,8 +67,8 @@ Delegate the harvesting to the **cross-references** agent. Distinguish four leve
 ## Composition
 
 - Orchestrates the **cross-references** agent.
-- Feeds **_topic-trace** when the user wants a theme-level (not passage-level) web.
-- Feeds **_chapter-readme-fill** with the top 4–10 connections to drop into a chapter README.
+- Feeds **_topic_trace** when the user wants a theme-level (not passage-level) web.
+- Feeds **_chapter_readme_fill** with the top 4–10 connections to drop into a chapter README.
 
 ## Avoid
 

@@ -1,5 +1,5 @@
 ---
-name: _personal-reflection
+name: _personal_reflection
 description: Scaffold a personal reflection / journal entry on a Bible passage, chapter, or theme in the user's `.personal/<email>/` folder. Use when the user says "journal about [chapter]", "I want to reflect on [passage]", "help me write what this means to me", "personal reflection on [verse]", "what's stirring in me from [chapter]", or wants devotional / reflective output that is explicitly *theirs* and explicitly *personal* (not shared reference material). Output goes to `.personal/<user-email>/journal/` or `.personal/<user-email>/<book>/<chapter>/notes.md` — never the shared layer.
 ---
 
@@ -7,7 +7,7 @@ description: Scaffold a personal reflection / journal entry on a Bible passage, 
 
 Scaffold a personal reflection or journal entry. Output is the user's own — first-person, devotional, application-focused — and lives in their email-named folder under `.personal/`.
 
-This is the *opposite* of `_chapter-readme-fill`, which produces factual reference content for the shared layer. Personal reflection is yours to keep, share, or delete — by convention, not gitignore.
+This is the *opposite* of `_chapter_readme_fill`, which produces factual reference content for the shared layer. Personal reflection is yours to keep, share, or delete — by convention, not gitignore.
 
 ## Triggers
 
@@ -51,7 +51,7 @@ Filename and folder convention is up to the user; default to one of the above.
 [The user's gut reading before research — preserved on purpose. Don't sand it off.]
 
 ## What I want to understand better
-[Questions to revisit — could feed a future _word-study, _cross-reference-map, or conversation with the group]
+[Questions to revisit — could feed a future _word_study, _cross_reference_map, or conversation with the group]
 
 ## Where my life intersects this
 [Application that's specific, not generic. "I will be more loving" is generic. "I will not interrupt my wife when she tells me about her day" is specific.]
@@ -74,9 +74,9 @@ Filename and folder convention is up to the user; default to one of the above.
 ## Composition
 
 - No primary agent dependency — this is a personal-output skill, not a research skill.
-- Pairs with **_prayer-from-passage** when the user wants prayer to be the primary output.
-- Pairs with **_deep-bible-study-devotional** when the user wants both: research-grounded study *and* a personal reflection saved separately.
-- The **_compare-notes** skill can later surface this reflection alongside others' if it's committed.
+- Pairs with **_prayer_from_passage** when the user wants prayer to be the primary output.
+- Pairs with **_deep_bible_study_devotional** when the user wants both: research-grounded study *and* a personal reflection saved separately.
+- The **_compare_notes** skill can later surface this reflection alongside others' if it's committed.
 
 ## Avoid
 
